@@ -4,14 +4,14 @@ A comprehensive implementation and analysis of chaotic dynamics in Large Languag
 
 ## 🎯 Overview
 
-This project provides the first empirical demonstration that two-agent LLM conversations exhibit genuine chaotic behavior, complete with positive Lyapunov exponents, strange attractors, and sensitive dependence on initial conditions.
+This project investigates chaotic dynamics in two-agent LLM conversations, implementing mathematical frameworks to analyze conversation trajectories and detect patterns consistent with chaotic behavior.
 
 ### 🔬 Key Findings
 
-- **Chaos Confirmed**: Positive Lyapunov exponents (λ > 0) in extended conversations
-- **Encoding-Dependent Thresholds**: Critical lengths vary by text representation scheme
-- **Strange Attractors**: Fractal correlation dimension D_c = 2.34
-- **Extended Dynamics**: 40+ turn conversations show sustained chaotic behavior
+- **Positive Lyapunov exponents** (λ > 0) observed in extended conversations
+- **Encoding-dependent thresholds** for chaos emergence vary by text representation scheme
+- **Fractal structures** with correlation dimension D_c = 2.34
+- **Extended conversation dynamics** in 40+ turn interactions show complex behavior
 
 ## 📊 Technical Report
 
@@ -104,10 +104,10 @@ Where:
 ## 📈 Key Experimental Results
 
 ### Chaos Indicators
-- **Positive Lyapunov Exponents**: λ = 0.012470 in 40-turn advanced encoding conversations
-- **Sensitive Dependence**: Small prompt changes → 85% content divergence
-- **Strange Attractors**: Fractal dimension D_c = 2.34 ± 0.12
-- **Signal-to-Noise Ratio**: SNR = 2.34 indicating deterministic dynamics
+- **Lyapunov Exponents**: λ = 0.012470 measured in 40-turn advanced encoding conversations
+- **Sensitive Dependence**: Small prompt changes lead to significant content divergence
+- **Fractal Attractors**: Correlation dimension D_c = 2.34 ± 0.12
+- **Signal-to-Noise Ratio**: SNR = 2.34 suggests deterministic underlying dynamics
 
 ### Conversation Length Scaling
 - **Short (5-15 turns)**: Testing and basic analysis
@@ -160,23 +160,24 @@ python encoding_comparison_study.py
 
 ## 🏆 Key Contributions
 
-1. **First empirical demonstration** of chaos in LLM conversations
-2. **Mathematical framework** for agent conversation dynamics
-3. **Encoding scheme analysis** comparing text representation methods
-4. **Extended conversation studies** up to 40+ turns
-5. **Quantitative chaos detection** with statistical significance
-6. **Theoretical insights** into AI system predictability limits
+1. **Empirical analysis** of chaotic patterns in LLM conversations
+2. **Mathematical framework** for modeling agent conversation dynamics
+3. **Encoding scheme comparison** of different text representation methods
+4. **Extended conversation analysis** up to 40+ turns
+5. **Quantitative chaos detection** methods with statistical validation
+6. **Insights** into conversation predictability and complexity
 
 ## 📖 Citation
 
 If you use this work in research, please cite:
 
 ```bibtex
-@article{chaos_llm_conversations_2025,
-  title={Chaos Theory in Two-Agent Discrete Time Dynamical Systems: An Empirical Investigation of Large Language Model Conversations},
-  author={Claude, Anthropic and Sampathkumar, Rajesh},
+@techreport{chaos_llm_conversations_2025,
+  title={Chaos Theory in Two-Agent Discrete Time Dynamical Systems: An Investigation of Large Language Model Conversations},
+  author={Sampathkumar, Rajesh and Claude, Anthropic},
   year={2025},
-  note={Technical Report}
+  type={Technical Report},
+  url={https://github.com/aiexplorations/agentic_nld}
 }
 ```
 
