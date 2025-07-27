@@ -172,8 +172,8 @@ python encoding_comparison_study.py
 If you use this work in research, please cite:
 
 ```bibtex
-@techreport{chaos_llm_conversations_2025,
-  title={Chaos Theory in Two-Agent Discrete Time Dynamical Systems: An Investigation of Large Language Model Conversations},
+@techreport{dynamical_analysis_llm_2025,
+  title={Dynamical Analysis of Two-Agent Language Model Conversations},
   author={Sampathkumar, Rajesh and Claude, Anthropic},
   year={2025},
   type={Technical Report},

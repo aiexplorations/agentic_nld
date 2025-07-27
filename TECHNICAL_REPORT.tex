@@ -14,11 +14,11 @@
 % Page setup
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{Chaos Theory in Two-Agent LLM Conversations}
+\fancyhead[L]{Dynamical Analysis of Two-Agent LLM Conversations}
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
-\title{Chaos Theory in Two-Agent Discrete Time Dynamical Systems: An Empirical Investigation of Large Language Model Conversations}
+\title{Dynamical Analysis of Two-Agent Language Model Conversations}
 \author{Anthropic Claude\thanks{Anthropic PBC} \and Rajesh Sampathkumar\thanks{Independent Researcher, rexplorations@gmail.com}}
 \date{July 2025}
 
@@ -27,9 +27,9 @@
 \maketitle
 
 \begin{abstract}
-This technical report presents a comprehensive investigation into chaotic behavior in two-agent conversational systems using Large Language Models (LLMs). We implement a discrete-time dynamical system framework to model agent interactions and demonstrate empirically that text-based conversations between LLM agents exhibit sensitive dependence on initial conditions—a hallmark of chaos. Our experimental analysis across multiple conversation lengths (5-30 turns) reveals Lyapunov exponents $\lambda > 0$, significant trajectory divergence under perturbation, and complex phase space dynamics consistent with chaotic attractors. These findings have profound implications for understanding emergent behavior in multi-agent AI systems and the predictability limits of AI-mediated conversations.
+This technical report presents a dynamical analysis of conversational systems using Large Language Models (LLMs). We implement a discrete-time dynamical system framework to model agent interactions and analyze the trajectory evolution of text-based conversations between LLM agents. Our experimental analysis across multiple conversation lengths (5-40 turns) and encoding schemes reveals positive Lyapunov exponents in extended conversations, trajectory divergence patterns, and complex phase space dynamics. These findings provide insights into the predictability and complexity of multi-agent AI conversations.
 
-\textbf{Keywords:} Chaos theory, Large Language Models, Multi-agent systems, Dynamical systems, Lyapunov exponents, Emergent behavior
+\textbf{Keywords:} Large Language Models, Multi-agent systems, Dynamical systems, Trajectory analysis, Lyapunov exponents, Conversation modeling
 \end{abstract}
 
 \section{Introduction}
@@ -202,14 +202,14 @@ and $\Theta$ is the Heaviside step function.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{theoretical_framework.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/theoretical_framework.png}
 \caption{Theoretical framework showing state evolution, text encoding, nonlinear dynamics, and system architecture}
 \label{fig:theoretical}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{comprehensive_analysis.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/comprehensive_analysis.png}
 \caption{State evolution and phase space trajectories for different conversation lengths}
 \label{fig:comprehensive}
 \end{figure}
@@ -244,14 +244,14 @@ Length (turns) & $\lambda_A$ & $\lambda_B$ & $D_{final}$ & $\sigma_{traj}^2$ \\
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{experimental_results.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/experimental_results.png}
 \caption{Comprehensive experimental results showing Lyapunov scaling, sensitivity analysis, phase space, signal/noise decomposition, correlation dimension, and statistical significance}
 \label{fig:experimental}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{long_conversation_20turns.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/long_conversation_20turns.png}
 \caption{Trajectory divergence under small prompt perturbations in 20-turn conversation}
 \label{fig:perturbation}
 \end{figure}
@@ -307,7 +307,7 @@ Extended (40T) & 0.012470 & 0.325 & 425.6s & 100\% & Advanced + length \\
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{encoding_comparison_study.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/encoding_comparison_study.png}
 \caption{Comprehensive encoding comparison showing Lyapunov exponents, chaos detection rates, divergence patterns, and computational performance across different encoding schemes}
 \label{fig:encoding_comparison}
 \end{figure}
@@ -354,14 +354,14 @@ Embedding Dimension $m_{opt}$ & 6 & [5, 7] \\
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{chaos_indicators.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/chaos_indicators.png}
 \caption{Detailed chaos indicators including Lyapunov calculation, recurrence plots, power spectrum analysis, and complexity measures}
 \label{fig:chaos_indicators}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{summary_evidence.png}
+\includegraphics[width=0.8\textwidth]{final_visualizations/summary_evidence.png}
 \caption{Summary of quantitative evidence for chaotic behavior across all experimental measures}
 \label{fig:summary}
 \end{figure}
